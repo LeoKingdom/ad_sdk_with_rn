@@ -91,6 +91,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/lcyun/Desktop/ad_sdk_with_rn/android/app/libs/glide-3.6.0.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.infer.annotation:infer-annotation:0.11.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
@@ -139,5 +140,7 @@
     <orderEntry type="library" name="Gradle: com.facebook.fresco:imagepipeline-okhttp3:2.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: org.webkit:android-jsc:r245459@aar" level="project" />
     <orderEntry type="library" name="Gradle: :open_ad_sdk:@aar" level="project" />
+    <orderEntry type="library" name="Gradle: :android-gif-drawable-1.2.6:@aar" level="project" />
+    <orderEntry type="library" name="Gradle: :circleimageview-2.2.0:@aar" level="project" />
   </component>
 </module>

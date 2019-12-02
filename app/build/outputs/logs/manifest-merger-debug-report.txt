@@ -1,0 +1,438 @@
+-- Merging decision tree log ---
+provider#com.bytedance.sdk.openadsdk.multipro.TTMultiProvider
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:45:9-48:40
+	android:authorities
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
+provider#com.bytedance.sdk.openadsdk.TTFileProvider
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:49:9-57:20
+	android:authorities
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
+manifest
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
+MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2a80788b0e7a12ab84d453ef92d8ef25/AndroidManifest.xml:2:1-13:12
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:2:1-112:12
+MERGED from [:android-gif-drawable-1.2.6:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/5679180ea33e1e37fe3f665236b727f9/AndroidManifest.xml:2:1-11:12
+MERGED from [:circleimageview-2.2.0:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b51757128025d6d30a8b9e1667a70238/AndroidManifest.xml:2:1-11:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/a11e51382b0ddc610c0d1e48c4cf6bc5/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/a7f6da5099fd1a73ba6dcff78879f2d2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/f1a9d86abc28ca6ef386446a3785128f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/27d6c6f04afd2f2cea739de726bce207/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/fd134362641f2f262d318e354ad54daa/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/32cd2c7b6ec5b5dca430e1e5c50cc296/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b6f36d843e370a6e69632806ed8264a5/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/7ec863bead77b9410f4b21659252b06f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/bbdaa59eda393ba67c259d23d6a01e9d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/fc245cebb6391cc8cfdaad88196cd37a/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/bfba7dc40c00ff0735c5fd78b56725c9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/542b18744c517e1a6757e835d8a7e6b8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/e9e845a51df234f1ea4b573fad4d38c6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/772175e1d70a2be7ec188ef089ca8685/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2d02b0813ffd5fb158037a60e9ffdb7f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/e4880cddd2838ea3eb2ada01e03021bf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/04b2c00f7e874f0111ab56581e429d07/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/92c626ff8a642711425fc77aca4725ac/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/9c760d42199e2d2f91a5822149ae06e0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/31270f098e57cf38dbd063384ecc886f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/5ea904b55c7dbf14dbd2de0f3a98ec9c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/68b85315d73f68ae80b3a6af29e2ae37/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/0de35b27595397067cc1ed9d3f8ac500/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/56dadd56625c4df04a259a98a42118fe/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/6baf1c64f6aeaf5246b71772f0454f00/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2511c1e843274a84d75addc928c956fa/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/5413dfe30a9c97ca73bc2a5ad2e24b18/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/d50f23fa038189f465f86fdc68b63ab9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/afbdec3f0bde95a82db3a9f84f2502f0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/c7cf7406583da559b1944b86ef580395/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/cc53467f5b5cb91aba1495d8611b5b8f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/00b71ae49331d3f2769836b4f0aa81c6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/1ac7b50e9b99d0532b737b6add9bf1b4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/f62235c8d9f1cffb4cbd3aa1eab5ead5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b6ab637a028fb3117f20d5135b690e60/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/a3c25fd830cfa70beae0033a253d316c/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:2:3-31
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:2:3-31
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:20:5-67
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:20:5-67
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:6:5-75
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:18:5-75
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:18:5-75
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:6:22-72
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:13:5-79
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:8:5-81
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:14:5-81
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:8:22-78
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:9:5-76
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:19:5-76
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:19:5-76
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:9:22-73
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:11:5-83
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:11:22-80
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:13:22-65
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:16:5-68
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:16:22-65
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:19:22-76
+uses-permission#android.permission.RECEIVE_USER_PRESENT
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:22:22-76
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:23:5-78
+MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:23:5-78
+MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:23:5-78
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:23:22-75
+uses-permission#android.permission.EXPAND_STATUS_BAR
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:24:5-76
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:24:22-73
+application
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:26:5-58:19
+MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:26:5-58:19
+MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:26:5-58:19
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2a80788b0e7a12ab84d453ef92d8ef25/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2a80788b0e7a12ab84d453ef92d8ef25/AndroidManifest.xml:11:5-20
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:22:5-110:19
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:22:5-110:19
+MERGED from [:circleimageview-2.2.0:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b51757128025d6d30a8b9e1667a70238/AndroidManifest.xml:9:5-20
+MERGED from [:circleimageview-2.2.0:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b51757128025d6d30a8b9e1667a70238/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/fc245cebb6391cc8cfdaad88196cd37a/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/fc245cebb6391cc8cfdaad88196cd37a/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.0.1] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/56dadd56625c4df04a259a98a42118fe/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/56dadd56625c4df04a259a98a42118fe/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/6baf1c64f6aeaf5246b71772f0454f00/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/6baf1c64f6aeaf5246b71772f0454f00/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/56dadd56625c4df04a259a98a42118fe/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:28:7-39
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:28:7-39
+	tools:ignore
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:30:7-52
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:30:7-52
+	tools:targetApi
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:29:7-41
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:29:7-41
+	android:allowBackup
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:32:7-34
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:32:7-34
+	android:theme
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:33:7-38
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:33:7-38
+	android:networkSecurityConfig
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:31:9-60
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:31:9-60
+	android:usesCleartextTraffic
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:27:7-38
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:27:7-38
+activity#com.ad_sdk_with_rn.MainActivity
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:34:7-43:18
+	android:label
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:36:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:38:9-51
+	android:configChanges
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:37:9-79
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:35:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:39:9-42:25
+action#android.intent.action.MAIN
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:40:13-65
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:40:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:41:13-73
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:41:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:44:7-84
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:44:17-81
+uses-sdk
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2a80788b0e7a12ab84d453ef92d8ef25/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2a80788b0e7a12ab84d453ef92d8ef25/AndroidManifest.xml:7:5-9:41
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:8:5-11:591
+MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:8:5-11:591
+MERGED from [:android-gif-drawable-1.2.6:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/5679180ea33e1e37fe3f665236b727f9/AndroidManifest.xml:7:5-9:41
+MERGED from [:android-gif-drawable-1.2.6:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/5679180ea33e1e37fe3f665236b727f9/AndroidManifest.xml:7:5-9:41
+MERGED from [:circleimageview-2.2.0:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b51757128025d6d30a8b9e1667a70238/AndroidManifest.xml:5:5-7:41
+MERGED from [:circleimageview-2.2.0:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b51757128025d6d30a8b9e1667a70238/AndroidManifest.xml:5:5-7:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/a11e51382b0ddc610c0d1e48c4cf6bc5/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/a11e51382b0ddc610c0d1e48c4cf6bc5/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/a7f6da5099fd1a73ba6dcff78879f2d2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/a7f6da5099fd1a73ba6dcff78879f2d2/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/f1a9d86abc28ca6ef386446a3785128f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/f1a9d86abc28ca6ef386446a3785128f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/27d6c6f04afd2f2cea739de726bce207/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/27d6c6f04afd2f2cea739de726bce207/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/fd134362641f2f262d318e354ad54daa/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/fd134362641f2f262d318e354ad54daa/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/32cd2c7b6ec5b5dca430e1e5c50cc296/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/32cd2c7b6ec5b5dca430e1e5c50cc296/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b6f36d843e370a6e69632806ed8264a5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b6f36d843e370a6e69632806ed8264a5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/7ec863bead77b9410f4b21659252b06f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/7ec863bead77b9410f4b21659252b06f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/bbdaa59eda393ba67c259d23d6a01e9d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/bbdaa59eda393ba67c259d23d6a01e9d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/fc245cebb6391cc8cfdaad88196cd37a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/fc245cebb6391cc8cfdaad88196cd37a/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/bfba7dc40c00ff0735c5fd78b56725c9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/bfba7dc40c00ff0735c5fd78b56725c9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/542b18744c517e1a6757e835d8a7e6b8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/542b18744c517e1a6757e835d8a7e6b8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/e9e845a51df234f1ea4b573fad4d38c6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/e9e845a51df234f1ea4b573fad4d38c6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/772175e1d70a2be7ec188ef089ca8685/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/772175e1d70a2be7ec188ef089ca8685/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2d02b0813ffd5fb158037a60e9ffdb7f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2d02b0813ffd5fb158037a60e9ffdb7f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/e4880cddd2838ea3eb2ada01e03021bf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/e4880cddd2838ea3eb2ada01e03021bf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/04b2c00f7e874f0111ab56581e429d07/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/04b2c00f7e874f0111ab56581e429d07/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/92c626ff8a642711425fc77aca4725ac/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/92c626ff8a642711425fc77aca4725ac/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/9c760d42199e2d2f91a5822149ae06e0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/9c760d42199e2d2f91a5822149ae06e0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/31270f098e57cf38dbd063384ecc886f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/31270f098e57cf38dbd063384ecc886f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/5ea904b55c7dbf14dbd2de0f3a98ec9c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/5ea904b55c7dbf14dbd2de0f3a98ec9c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/68b85315d73f68ae80b3a6af29e2ae37/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/68b85315d73f68ae80b3a6af29e2ae37/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/0de35b27595397067cc1ed9d3f8ac500/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/0de35b27595397067cc1ed9d3f8ac500/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/56dadd56625c4df04a259a98a42118fe/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/56dadd56625c4df04a259a98a42118fe/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/6baf1c64f6aeaf5246b71772f0454f00/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/6baf1c64f6aeaf5246b71772f0454f00/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2511c1e843274a84d75addc928c956fa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2511c1e843274a84d75addc928c956fa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/5413dfe30a9c97ca73bc2a5ad2e24b18/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/5413dfe30a9c97ca73bc2a5ad2e24b18/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/d50f23fa038189f465f86fdc68b63ab9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/d50f23fa038189f465f86fdc68b63ab9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/afbdec3f0bde95a82db3a9f84f2502f0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/afbdec3f0bde95a82db3a9f84f2502f0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/c7cf7406583da559b1944b86ef580395/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/c7cf7406583da559b1944b86ef580395/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/cc53467f5b5cb91aba1495d8611b5b8f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/cc53467f5b5cb91aba1495d8611b5b8f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/00b71ae49331d3f2769836b4f0aa81c6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/00b71ae49331d3f2769836b4f0aa81c6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/1ac7b50e9b99d0532b737b6add9bf1b4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/1ac7b50e9b99d0532b737b6add9bf1b4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/f62235c8d9f1cffb4cbd3aa1eab5ead5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/f62235c8d9f1cffb4cbd3aa1eab5ead5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b6ab637a028fb3117f20d5135b690e60/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/b6ab637a028fb3117f20d5135b690e60/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/a3c25fd830cfa70beae0033a253d316c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/a3c25fd830cfa70beae0033a253d316c/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:11:9-588
+	android:targetSdkVersion
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml
+android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:16:5-88
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:16:30-85
+service#com.ss.android.socialbase.downloader.notification.DownloadNotificationService
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:25:9-113
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:25:18-110
+service#com.ss.android.socialbase.downloader.downloader.DownloadService
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:26:9-99
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:26:18-96
+service#com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:27:9-33:19
+	android:process
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:29:13-42
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:28:13-109
+intent-filter#action:name:com.ss.android.socialbase.downloader.remote
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:30:13-32:29
+action#com.ss.android.socialbase.downloader.remote
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:31:17-86
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:31:25-83
+service#com.ss.android.socialbase.downloader.impls.DownloadHandleService
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:34:9-100
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:34:18-97
+service#com.ss.android.socialbase.appdownloader.DownloadHandlerService
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:42:9-98
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:42:18-95
+activity#com.ss.android.socialbase.appdownloader.view.DownloadSizeLimitActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:58:9-61:59
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:60:13-44
+	android:theme
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:61:13-56
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:59:13-98
+activity#com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:62:9-65:59
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:64:13-44
+	android:theme
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:65:13-56
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:63:13-99
+activity#com.ss.android.downloadlib.activity.TTDelegateActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:66:9-69:75
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:68:13-44
+	android:theme
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:69:13-72
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:67:13-82
+receiver#com.ss.android.downloadlib.core.download.DownloadReceiver
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:71:9-94
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:71:19-91
+receiver#com.bytedance.embedapplog.collector.Collector
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:72:9-75:39
+	android:enabled
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:74:13-35
+	android:exported
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:75:13-36
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:73:13-73
+activity#com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:76:9-79:47
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:79:13-44
+	android:configChanges
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:78:13-74
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:77:13-86
+activity#com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:80:9-83:47
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:83:13-44
+	android:configChanges
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:82:13-74
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:81:13-94
+activity#com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:84:9-87:47
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:87:13-44
+	android:configChanges
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:86:13-74
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:85:13-91
+activity#com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:88:9-91:47
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:91:13-44
+	android:configChanges
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:90:13-74
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:89:13-86
+activity#com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:92:9-95:47
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:95:13-44
+	android:configChanges
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:94:13-74
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:93:13-93
+activity#com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:96:9-99:47
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:99:13-44
+	android:configChanges
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:98:13-74
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:97:13-90
+activity#com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:100:9-103:47
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:103:13-44
+	android:configChanges
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:102:13-74
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:101:13-97
+activity#com.bytedance.sdk.openadsdk.activity.TTDelegateActivity
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:104:9-107:75
+	android:launchMode
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:106:13-44
+	android:theme
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:107:13-72
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:105:13-83
+service#com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService
+ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:109:9-95
+	android:name
+		ADDED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:109:18-92

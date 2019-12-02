@@ -1,6 +1,8 @@
 package com.ad_sdk_with_rn.packages;
 
+import com.ad_sdk_with_rn.modules.RnBannerReactModule;
 import com.ad_sdk_with_rn.modules.RnFullScreenReactModule;
+import com.ad_sdk_with_rn.modules.RnInterstitialReactModule;
 import com.ad_sdk_with_rn.modules.RnRewardVideoReactModule;
 import com.ad_sdk_with_rn.modules.RnSplashReactModule;
 import com.facebook.react.ReactPackage;
@@ -21,7 +23,9 @@ public class RnCustomPackage implements ReactPackage {
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
         return Arrays.<NativeModule>asList(new RnRewardVideoReactModule(reactContext),
                 new RnFullScreenReactModule(reactContext),
-                new RnSplashReactModule(reactContext));
+                new RnSplashReactModule(reactContext),
+                new RnInterstitialReactModule(reactContext),
+                new RnBannerReactModule(reactContext));
     }
 
     @NonNull

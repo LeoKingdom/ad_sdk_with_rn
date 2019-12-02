@@ -125,10 +125,11 @@ public class RnSplashReactModule extends ReactContextBaseJavaModule {
                     public void run() {
                         if (!showActivity.isFinishing()) {
                             mSplashDialog = new Dialog(showActivity, R.style.SplashScreen_Fullscreen);
-                            mSplashDialog.setContentView(R.layout.launch_screen);
-                            splashContainer=mSplashDialog.findViewById(R.id.splash_container);
-                            mSplashDialog.setCancelable(false);
+                            View view=View.inflate(showActivity,R.layout.launch_screen,null);
+                            splashContainer=view.findViewById(R.id.splash_container);
                             splashContainer.addView(splashView);
+                            mSplashDialog.setContentView(view);
+                            mSplashDialog.setCancelable(false);
                             if (!mSplashDialog.isShowing()) {
                                 mSplashDialog.show();
                             }
@@ -140,6 +141,9 @@ public class RnSplashReactModule extends ReactContextBaseJavaModule {
                     @Override
                     public void onAdClicked(View view, int type) {
                         showToast("开屏广告点击");
+                        WritableMap event = Arguments.createMap();
+                        event.putInt("splashType", 2);
+                        sendEventToRn("splashCallback", event);
                     }
 
                     @Override
@@ -150,15 +154,18 @@ public class RnSplashReactModule extends ReactContextBaseJavaModule {
                     @Override
                     public void onAdSkip() {
                         showToast("开屏广告跳过");
-
+                        WritableMap event = Arguments.createMap();
+                        event.putInt("splashType", 1);
+                        sendEventToRn("splashCallback", event);
                     }
 
                     @Override
                     public void onAdTimeOver() {
                         showToast("开屏广告倒计时结束");
                         WritableMap event = Arguments.createMap();
-                        event.putString("isComplete", "ok");
-                        sendEventToRn("splashComplete", event);
+                        event.putInt("splashType", 0);
+                        sendEventToRn("splashCallback", event);
+                        mSplashDialog.dismiss();
                     }
                 });
                 if(ad.getInteractionType() == TTAdConstant.INTERACTION_TYPE_DOWNLOAD) {
