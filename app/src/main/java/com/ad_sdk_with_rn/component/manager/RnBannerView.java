@@ -3,6 +3,7 @@ package com.ad_sdk_with_rn.component.manager;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -75,6 +76,12 @@ public class RnBannerView extends RelativeLayout {
         nim = findViewById(R.id.iv_native_image);
         imc = findViewById(R.id.iv_native_icon);
         bannerRoot=findViewById(R.id.banner_root);
+        imgDislike.setOnClickListener((v -> {
+            Log.e("banner---","ok");
+        }));
+        mCreativeButton.setOnClickListener((v -> {
+            Log.e("banner1---","ok");
+        }));
     }
 
     public void hide(){

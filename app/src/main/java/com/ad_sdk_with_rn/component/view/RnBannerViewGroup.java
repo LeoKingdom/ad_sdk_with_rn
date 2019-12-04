@@ -1,6 +1,7 @@
 package com.ad_sdk_with_rn.component.view;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -19,11 +20,15 @@ import com.bytedance.sdk.openadsdk.TTAdNative;
 import com.bytedance.sdk.openadsdk.TTImage;
 import com.bytedance.sdk.openadsdk.TTNativeAd;
 import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.views.view.ReactViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 public class RnBannerViewGroup extends ReactViewGroup {
     private final Runnable measureAndLayout = new Runnable() {
@@ -40,14 +45,14 @@ public class RnBannerViewGroup extends ReactViewGroup {
     TTNativeAd nativeAd;
     private View view;
     private Button mCreativeButton;
-    private Context context;
+    private ReactContext context;
     private FrameLayout frameLayout;
     private RnBannerView bannerView;
     private ImageView imgDislike;
     private TextView titleTv;
     private TextView desTv;
 
-    public RnBannerViewGroup(Context context) {
+    public RnBannerViewGroup(ReactContext context) {
         super(context);
         this.context = context;
         TTAdNative mTTAdNative = TTAdManagerHolder.get().createAdNative(context);
@@ -59,13 +64,17 @@ public class RnBannerViewGroup extends ReactViewGroup {
         loadBannerAd(mTTAdNative, "901121423");
     }
 
+    public void show(){
+        this.bannerView.show();
+    }
+
     @SuppressWarnings({"ALL", "SameParameterValue"})
     private void loadBannerAd(TTAdNative mTTAdNative, String codeId) {
         frameLayout = new FrameLayout(context);
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         frameLayout.setLayoutParams(params);
         bannerView = new RnBannerView(context);
-        this.bannerView.hide();
+//        this.bannerView.hide();
         imgDislike = bannerView.getImgDislike();
         mCreativeButton = bannerView.getmCreativeButton();
         //step4:创建广告请求参数AdSlot,注意其中的setNativeAdtype方法，具体参数含义参考文档
@@ -95,9 +104,8 @@ public class RnBannerViewGroup extends ReactViewGroup {
 
             }
         });
-
         this.addView(bannerView);
-        bannerView.layout(0,0,width,height);
+        bannerView.layout(-width/2,0,width/2,height);
 
     }
 
@@ -105,7 +113,6 @@ public class RnBannerViewGroup extends ReactViewGroup {
     public void setAdData() {
         this.bannerView.setTitle(nativeAd.getTitle());
         this.bannerView.setDes(nativeAd.getDescription());
-        bindDislikeAction(nativeAd, imgDislike);
         if (nativeAd.getImageList() != null && !nativeAd.getImageList().isEmpty()) {
             TTImage image = nativeAd.getImageList().get(0);
             if (image != null && image.isValid()) {
@@ -150,67 +157,55 @@ public class RnBannerViewGroup extends ReactViewGroup {
         creativeViewList.add(mCreativeButton);
 
         //重要! 这个涉及到广告计费，必须正确调用。convertView必须使用ViewGroup。
-        nativeAd.registerViewForInteraction((ViewGroup) bannerView, clickViewList, creativeViewList, imgDislike, new TTNativeAd.AdInteractionListener() {
-            @Override
-            public void onAdClicked(View view, TTNativeAd ad) {
-                if (ad != null) {
-                    WritableMap event = Arguments.createMap();
-                    event.putInt("bannerType", 0);
-//                    sendEventToRn("bannerClick", event);
-                }
-            }
-
-            @Override
-            public void onAdCreativeClick(View view, TTNativeAd ad) {
-                if (ad != null) {
-                    WritableMap event = Arguments.createMap();
-                    event.putInt("bannerType", 0);
-//                    sendEventToRn("bannerClick", event);
-                }
-            }
-
-            @Override
-            public void onAdShow(TTNativeAd ad) {
-                if (ad != null) {
-                }
-            }
-        });
+//        nativeAd.registerViewForInteraction((ViewGroup) bannerView, clickViewList, creativeViewList, imgDislike, new TTNativeAd.AdInteractionListener() {
+//            @Override
+//            public void onAdClicked(View view, TTNativeAd ad) {
+//                if (ad != null) {
+//                    WritableMap event = Arguments.createMap();
+//                    event.putInt("code", 0);
+//                    sendEventToRn("bannerCallback", event);
+//                }
+//            }
+//
+//            @Override
+//            public void onAdCreativeClick(View view, TTNativeAd ad) {
+//                if (ad != null) {
+//                    WritableMap event = Arguments.createMap();
+//                    event.putInt("code", 0);
+//                    sendEventToRn("bannerCallback", event);
+//                }
+//            }
+//
+//            @Override
+//            public void onAdShow(TTNativeAd ad) {
+//                if (ad != null) {
+//                }
+//            }
+//        });
         this.bannerView.show();
 
 
     }
 
     //接入网盟的dislike 逻辑，有助于提示广告精准投放度
-    private void bindDislikeAction(TTNativeAd ad, View dislikeView) {
-        final TTAdDislike ttAdDislike = ad.getDislikeDialog(MainActivity.mainActivity);
-        if (ttAdDislike != null) {
-            ttAdDislike.setDislikeInteractionCallback(new TTAdDislike.DislikeInteractionCallback() {
-                @Override
-                public void onSelected(int position, String value) {
-
-                }
-
-                @Override
-                public void onCancel() {
-
-                }
-            });
-        }
-        dislikeView.setOnClickListener(new View.OnClickListener() {
+    public void bindDislikeAction() {
+        imgDislike.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.e("click---","ok");
+                bannerView.hide();
                 WritableMap event = Arguments.createMap();
-                event.putInt("bannerType", 1);
-//                sendEventToRn("bannerClick", event);
-//                if (ttAdDislike != null)
-//                    ttAdDislike.showDislikeDialog();
+                event.putInt("code", 1);
+                sendEventToRn("bannerCallback", event);
             }
         });
+
     }
 
-//    @Override
-//    public void requestLayout() {
-//        super.requestLayout();
-//        post(measureAndLayout);
-//    }
+    public void sendEventToRn(String eventName, @Nullable WritableMap paramss) {
+
+        context.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+                .emit(eventName, paramss);
+
+    }
 }

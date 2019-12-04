@@ -24,5 +24,6 @@ public class MainActivity extends ReactActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mainActivity = this;
+//        setContentView(new RnBannerViewGroup(this));
     }
 }

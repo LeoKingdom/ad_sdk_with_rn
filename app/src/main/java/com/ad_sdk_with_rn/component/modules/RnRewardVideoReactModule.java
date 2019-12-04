@@ -1,5 +1,6 @@
 package com.ad_sdk_with_rn.component.modules;
 
+import android.text.TextUtils;
 import android.widget.Toast;
 
 import com.ad_sdk_with_rn.MainActivity;
@@ -91,7 +92,10 @@ public class RnRewardVideoReactModule extends ReactContextBaseJavaModule {
      */
     @ReactMethod
     public void showRewardAd(String codeId) {
-        test_id_ver=codeId;
+        if (!TextUtils.isEmpty(codeId)){
+            test_id_ver=codeId;
+        }
+
         loadRewardAd();
         MainActivity.mainActivity.runOnUiThread(new Runnable() {
             @Override

@@ -839,6 +839,7 @@ id appdownloader_icon
 id appdownloader_root
 id async
 id banner_container
+id banner_root
 id beginning
 id blocking
 id bottom
@@ -1131,6 +1132,7 @@ layout banner_layout
 layout dev_loading_view
 layout fps_view
 layout launch_screen
+layout main_test
 layout native_ad
 layout native_insert_ad_layout
 layout notification_action

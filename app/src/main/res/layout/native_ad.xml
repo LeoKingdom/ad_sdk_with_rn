@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:id="@+id/banner_root">
 
     <TextView
         android:id="@+id/tv_native_ad_title"
@@ -10,7 +11,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:singleLine="true"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
 
     <ImageView
         android:id="@+id/iv_native_image"
@@ -18,10 +21,15 @@
         android:layout_height="200dp"
         android:layout_below="@id/tv_native_ad_title"
         android:layout_marginBottom="5dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:scaleType="centerCrop" />
-
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+        android:id="@+id/img_native_dislike"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/tt_dislike_icon"
+        android:layout_alignRight="@+id/iv_native_image"
+        android:layout_margin="5dp"/>
     <ImageView
         android:id="@+id/iv_native_icon"
         android:layout_width="15dp"
@@ -38,26 +46,22 @@
         android:layout_below="@id/iv_native_image"
         android:layout_toRightOf="@id/iv_native_icon"
         android:layout_toEndOf="@id/iv_native_icon"
-        android:paddingBottom="20dp"
         tools:ignore="UseCompoundDrawables">
 
         <TextView
             android:id="@+id/tv_native_ad_desc"
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginRight="25dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:ellipsize="end"
             android:singleLine="true"
             android:textSize="14sp" />
 
-        <ImageView
-            android:id="@+id/img_native_dislike"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:background="@drawable/tt_dislike_icon" />
+
     </LinearLayout>
 
     <Button
@@ -70,6 +74,7 @@
         android:layout_marginEnd="14dp"
         android:layout_alignTop="@+id/tv_source_desc_layout"
         android:textSize="10sp"
+        android:visibility="gone"
         />
 
 </RelativeLayout>
