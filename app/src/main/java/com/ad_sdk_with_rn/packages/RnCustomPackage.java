@@ -1,5 +1,6 @@
 package com.ad_sdk_with_rn.packages;
 
+import com.ad_sdk_with_rn.manager.RnBannerViewManager;
 import com.ad_sdk_with_rn.modules.RnBannerReactModule;
 import com.ad_sdk_with_rn.modules.RnFullScreenReactModule;
 import com.ad_sdk_with_rn.modules.RnInterstitialReactModule;
@@ -31,7 +32,7 @@ public class RnCustomPackage implements ReactPackage {
     @NonNull
     @Override
     public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
-        return Collections.emptyList();
+        return Arrays.asList(new RnBannerViewManager());
     }
 
 

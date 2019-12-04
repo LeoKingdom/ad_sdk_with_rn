@@ -38,6 +38,7 @@
         android:layout_below="@id/iv_native_image"
         android:layout_toRightOf="@id/iv_native_icon"
         android:layout_toEndOf="@id/iv_native_icon"
+        android:paddingBottom="20dp"
         tools:ignore="UseCompoundDrawables">
 
         <TextView

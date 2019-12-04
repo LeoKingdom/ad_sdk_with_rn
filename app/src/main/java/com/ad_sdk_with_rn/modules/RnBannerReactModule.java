@@ -165,12 +165,11 @@ public class RnBannerReactModule extends ReactContextBaseJavaModule {
         final AdSlot adSlot = new AdSlot.Builder()
                 .setCodeId(codeId)
                 .setSupportDeepLink(true)
-                .setExpressViewAcceptedSize(width,height)
-                .setImageAcceptedSize(width, height)
+                .setImageAcceptedSize(600, 150)
                 .setNativeAdType(AdSlot.TYPE_BANNER) //请求原生广告时候，请务必调用该方法，设置参数为TYPE_BANNER或TYPE_INTERACTION_AD
                 .setAdCount(1)
                 .build();
-        Log.e("display----",width+"/"+height);
+
         //step5:请求广告，对请求回调的广告作渲染处理
         mTTAdNative.loadNativeAd(adSlot, new TTAdNative.NativeAdListener() {
             @Override
@@ -191,7 +190,7 @@ public class RnBannerReactModule extends ReactContextBaseJavaModule {
                     //防止内存泄漏
                     mCreativeButton = null;
                 }
-
+                Log.e("display----",bannerView.getMeasuredHeight()+"/"+bannerView.getMeasuredWidth());
                 //绑定原生广告的数据
                 setAdData(bannerView, ads.get(0));
             }
@@ -205,7 +204,7 @@ public class RnBannerReactModule extends ReactContextBaseJavaModule {
         mBannerContainer = view.findViewById(R.id.banner_container);
         mBannerContainer.removeAllViews();
         mBannerContainer.addView(nativeView);
-        mAdDialog.setCancelable(false);
+        mAdDialog.setCancelable(true);
         mAdDialog.setContentView(view);
         mAdDialog.show();
         ((TextView) nativeView.findViewById(R.id.tv_native_ad_title)).setText(nativeAd.getTitle());
