@@ -1,4 +1,4 @@
-package com.ad_sdk_with_rn;
+package com.ad_sdk_with_rn.component.view;
 
 import android.content.Context;
 import android.view.View;
@@ -8,9 +8,10 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.ad_sdk_with_rn.manager.RnBannerView;
-import com.ad_sdk_with_rn.manager.TTAdManagerHolder;
-import com.bumptech.glide.Glide;
+
+import com.ad_sdk_with_rn.MainActivity;
+import com.ad_sdk_with_rn.component.manager.RnBannerView;
+import com.ad_sdk_with_rn.component.manager.TTAdManagerHolder;
 import com.bytedance.sdk.openadsdk.AdSlot;
 import com.bytedance.sdk.openadsdk.TTAdConstant;
 import com.bytedance.sdk.openadsdk.TTAdDislike;
@@ -34,6 +35,8 @@ public class RnBannerViewGroup extends ReactViewGroup {
             layout(getLeft(), getTop(), getRight(), getBottom());
         }
     };
+    private final int width;
+    private final int height;
     TTNativeAd nativeAd;
     private View view;
     private Button mCreativeButton;
@@ -50,6 +53,8 @@ public class RnBannerViewGroup extends ReactViewGroup {
         TTAdNative mTTAdNative = TTAdManagerHolder.get().createAdNative(context);
         //step3:可选，申请部分权限，如read_phone_state,防止获取不了imei时候，下载类广告没有填充的问题。
         TTAdManagerHolder.get().requestPermissionIfNecessary(context);
+        width= MainActivity.mainActivity.getWindowManager().getDefaultDisplay().getWidth();
+        height=MainActivity.mainActivity.getWindowManager().getDefaultDisplay().getHeight();
 
         loadBannerAd(mTTAdNative, "901121423");
     }
@@ -60,6 +65,7 @@ public class RnBannerViewGroup extends ReactViewGroup {
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         frameLayout.setLayoutParams(params);
         bannerView = new RnBannerView(context);
+        this.bannerView.hide();
         imgDislike = bannerView.getImgDislike();
         mCreativeButton = bannerView.getmCreativeButton();
         //step4:创建广告请求参数AdSlot,注意其中的setNativeAdtype方法，具体参数含义参考文档
@@ -85,12 +91,13 @@ public class RnBannerViewGroup extends ReactViewGroup {
                     return;
                 }
                 nativeAd = ads.get(0);
-
+                setAdData();
 
             }
         });
 
         this.addView(bannerView);
+        bannerView.layout(0,0,width,height);
 
     }
 
@@ -168,13 +175,7 @@ public class RnBannerViewGroup extends ReactViewGroup {
                 }
             }
         });
-
-//        frameLayout.addView(nativeView);
-//        Log.e("text----",((TextView) nativeView.findViewById(R.id.tv_native_ad_title)).getText().toString());
-//        view = View.inflate(context, R.layout.banner_layout, this);
-//        mBannerContainer = view.findViewById(R.id.banner_container);
-//        mBannerContainer.removeAllViews();
-//        mBannerContainer.addView(nativeView);
+        this.bannerView.show();
 
 
     }
@@ -207,9 +208,9 @@ public class RnBannerViewGroup extends ReactViewGroup {
         });
     }
 
-    @Override
-    public void requestLayout() {
-        super.requestLayout();
-        post(measureAndLayout);
-    }
+//    @Override
+//    public void requestLayout() {
+//        super.requestLayout();
+//        post(measureAndLayout);
+//    }
 }

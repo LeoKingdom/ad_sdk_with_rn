@@ -3,8 +3,8 @@ package com.ad_sdk_with_rn;
 import android.app.Application;
 import android.content.Context;
 
-import com.ad_sdk_with_rn.packages.RnCustomPackage;
-import com.ad_sdk_with_rn.manager.TTAdManagerHolder;
+import com.ad_sdk_with_rn.component.packages.RnCustomPackage;
+import com.ad_sdk_with_rn.component.manager.TTAdManagerHolder;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;

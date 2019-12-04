@@ -191,6 +191,7 @@ dependencies {
     implementation(name: 'open_ad_sdk', ext: 'aar')
     implementation(name: 'android-gif-drawable-1.2.6', ext: 'aar')
     implementation(name: 'circleimageview-2.2.0', ext: 'aar')
+    implementation files('libs/glide-3.6.0.jar')
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
         debugImplementation files(hermesPath + "hermes-debug.aar")
@@ -198,7 +199,6 @@ dependencies {
     } else {
         implementation jscFlavor
     }
-    implementation files('libs/glide-3.6.0.jar')
 }
 
 // Run this once to be able to run the application with BUCK

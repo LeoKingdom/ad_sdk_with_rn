@@ -1,4 +1,4 @@
-package com.ad_sdk_with_rn.manager;
+package com.ad_sdk_with_rn.component.manager;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -19,7 +19,7 @@ public class RnBannerView extends RelativeLayout {
     private Button mCreativeButton;
     private ImageView nim;
     private ImageView imc;
-
+    private RelativeLayout bannerRoot;
     public RnBannerView(Context context) {
         this(context, null);
     }
@@ -54,6 +54,10 @@ public class RnBannerView extends RelativeLayout {
         return desText;
     }
 
+    public RelativeLayout getBannerRoot() {
+        return bannerRoot;
+    }
+
     public ImageView getImgDislike() {
         return imgDislike;
     }
@@ -70,6 +74,15 @@ public class RnBannerView extends RelativeLayout {
         mCreativeButton = (Button) contentView.findViewById(R.id.btn_native_creative);
         nim = findViewById(R.id.iv_native_image);
         imc = findViewById(R.id.iv_native_icon);
+        bannerRoot=findViewById(R.id.banner_root);
+    }
+
+    public void hide(){
+        bannerRoot.setVisibility(GONE);
+    }
+
+    public void show(){
+        bannerRoot.setVisibility(VISIBLE);
     }
 
     public void setTitle(String title){

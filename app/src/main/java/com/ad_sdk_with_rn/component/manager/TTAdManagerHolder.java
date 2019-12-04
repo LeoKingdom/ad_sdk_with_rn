@@ -1,7 +1,8 @@
-package com.ad_sdk_with_rn.manager;
+package com.ad_sdk_with_rn.component.manager;
 
 import android.content.Context;
 
+import com.ad_sdk_with_rn.R;
 import com.bytedance.sdk.openadsdk.TTAdConfig;
 import com.bytedance.sdk.openadsdk.TTAdConstant;
 import com.bytedance.sdk.openadsdk.TTAdManager;
@@ -38,7 +39,7 @@ public class TTAdManagerHolder {
         return new TTAdConfig.Builder()
                 .appId("5001121")
                 .useTextureView(true) //使用TextureView控件播放视频,默认为SurfaceView,当有SurfaceView冲突的场景，可以使用TextureView
-                .appName("APP测试媒体")
+                .appName(context.getString(R.string.app_name))
                 .titleBarTheme(TTAdConstant.TITLE_BAR_THEME_DARK)
                 .allowShowNotify(true) //是否允许sdk展示通知栏提示
                 .allowShowPageWhenScreenLock(true) //是否在锁屏场景支持展示广告落地页

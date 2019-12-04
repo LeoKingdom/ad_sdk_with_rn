@@ -1,101 +1,42 @@
-package com.ad_sdk_with_rn.modules;
+package com.ad_sdk_with_rn.component.view;
 
 import android.content.Context;
 import android.widget.Toast;
 
-import com.ad_sdk_with_rn.MainActivity;
-import com.ad_sdk_with_rn.manager.TTAdManagerHolder;
+import com.ad_sdk_with_rn.component.manager.TTAdManagerHolder;
 import com.bytedance.sdk.openadsdk.AdSlot;
 import com.bytedance.sdk.openadsdk.TTAdConstant;
 import com.bytedance.sdk.openadsdk.TTAdManager;
 import com.bytedance.sdk.openadsdk.TTAdNative;
 import com.bytedance.sdk.openadsdk.TTAppDownloadListener;
 import com.bytedance.sdk.openadsdk.TTRewardVideoAd;
-import com.facebook.react.bridge.Arguments;
-import com.facebook.react.bridge.Callback;
-import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.modules.core.DeviceEventManagerModule;
+import com.facebook.react.views.view.ReactViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-public class RnRewardVideoReactModule extends ReactContextBaseJavaModule {
+public class RnRewardVideoView extends ReactViewGroup {
     private final String REACT_MODULE_NAME = "ReactReward";
     private final TTAdNative mTTAdNative;
     private TTRewardVideoAd mttRewardVideoAd;
-    private ReactApplicationContext context;
+    private Context context;
     private boolean mHasShowDownloadActive = false;
     private int orientation = 1; //1为竖屏 2 为横屏
-    private String reward_name; //奖励的名称
-    private int reward_count;//奖励数量
-    private String user_id = "";
-    private String ad_code_id;//广告 id
-    private String test_id_ver = "901121365";
-    private String test_id_hor = "901121430";
-    private boolean isComplete = false;
+    private String test_id_ver="901121365";
+    private String test_id_hor="901121430";
 
-    public RnRewardVideoReactModule(@NonNull ReactApplicationContext reactContext) {
-        super(reactContext);
-        this.context = reactContext;
+    public RnRewardVideoView(Context context) {
+        super(context);
+        this.context = context;
         //step1:初始化sdk
         TTAdManager ttAdManager = TTAdManagerHolder.get();
         //step2:(可选，强烈建议在合适的时机调用):申请部分权限，如read_phone_state,防止获取不了imei时候，下载类广告没有填充的问题。
-        TTAdManagerHolder.get().requestPermissionIfNecessary(reactContext);
-        mTTAdNative = ttAdManager.createAdNative(reactContext.getApplicationContext());
-
+        TTAdManagerHolder.get().requestPermissionIfNecessary(context);
+        mTTAdNative = ttAdManager.createAdNative(context.getApplicationContext());
+        initRewardAd();
     }
 
-    @NonNull
-    @Override
-    public String getName() {
-        return REACT_MODULE_NAME;
-    }
 
-    /**
-     * 初始化广告参数,rn 传入
-     *
-     * @param reward_name
-     * @param reward_count
-     * @param ad_code_id
-     * @param user_id
-     * @param orientation
-     */
-    @ReactMethod
-    public void initConfig(String reward_name, int reward_count, String ad_code_id, String user_id, int orientation) {
-        this.reward_name = reward_name;
-        this.reward_count = reward_count;
-        this.ad_code_id = ad_code_id;
-        this.user_id = user_id;
-        this.orientation = orientation;
-    }
-
-    /**
-     * 展示激励视频广告
-     */
-    @ReactMethod
-    public void showRewardAd() {
-        loadRewardAd();
-        MainActivity.mainActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                mttRewardVideoAd.showRewardVideoAd(MainActivity.mainActivity, TTAdConstant.RitScenes.CUSTOMIZE_SCENES, "scenes_test");
-            }
-        });
-
-    }
-
-    @ReactMethod
-    public void videoComplete(Callback callback) {
-        callback.invoke(isComplete);
-    }
-
-    /**
-     * 加载广告
-     */
-    private void loadRewardAd() {
+    private void initRewardAd() {
+//step4:创建广告请求参数AdSlot,具体参数含义参考文档
         AdSlot adSlot = new AdSlot.Builder()
                 .setCodeId(test_id_ver)
                 .setSupportDeepLink(true)
@@ -104,7 +45,7 @@ public class RnRewardVideoReactModule extends ReactContextBaseJavaModule {
                 .setRewardAmount(3)  //奖励的数量
                 .setUserID("user123")//用户id,必传参数
                 .setMediaExtra("media_extra") //附加参数，可选
-                .setOrientation(orientation) //必填参数，期望视频的播放方向：TTAdConstant.HORIZONTAL 或 TTAdConstant.VERTICAL
+                .setOrientation(TTAdConstant.HORIZONTAL) //必填参数，期望视频的播放方向：TTAdConstant.HORIZONTAL 或 TTAdConstant.VERTICAL
                 .build();
         //step5:请求广告
         mTTAdNative.loadRewardVideoAd(adSlot, new TTAdNative.RewardVideoAdListener() {
@@ -144,10 +85,6 @@ public class RnRewardVideoReactModule extends ReactContextBaseJavaModule {
                     //视频播放完成回调
                     @Override
                     public void onVideoComplete() {
-                        isComplete = true;
-                        WritableMap event = Arguments.createMap();
-                        event.putString("isComplete","ok");
-                        sendEventToRn("rewardComplete",event);
                         showToast("rewardVideoAd complete");
                     }
 
@@ -202,17 +139,13 @@ public class RnRewardVideoReactModule extends ReactContextBaseJavaModule {
                         showToast("安装完成，点击下载区域打开");
                     }
                 });
-
             }
         });
     }
 
-    public  void sendEventToRn(String eventName, @Nullable WritableMap paramss)
-    {
-
-        context.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
-                .emit(eventName, paramss);
-
+    @ReactMethod
+    public void setVideoOrientation(int orientation) {
+        this.orientation = orientation;
     }
 
     private void showToast(String msg) {
