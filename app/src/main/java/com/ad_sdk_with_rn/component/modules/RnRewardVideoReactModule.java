@@ -72,20 +72,6 @@ public class RnRewardVideoReactModule extends ReactContextBaseJavaModule {
         this.orientation = orientation;
     }
 
-    /**
-     * 展示激励视频广告
-     */
-    @ReactMethod
-    public void showRewardAd() {
-        loadRewardAd();
-        MainActivity.mainActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                mttRewardVideoAd.showRewardVideoAd(MainActivity.mainActivity, TTAdConstant.RitScenes.CUSTOMIZE_SCENES, "scenes_test");
-            }
-        });
-
-    }
 
     /**
      * 展示激励视频广告
@@ -147,12 +133,12 @@ public class RnRewardVideoReactModule extends ReactContextBaseJavaModule {
 
                     @Override
                     public void onAdShow() {
-                        showToast("rewardVideoAd show");
+//                        showToast("rewardVideoAd show");
                     }
 
                     @Override
                     public void onAdVideoBarClick() {
-                        showToast("rewardVideoAd bar click");
+//                        showToast("rewardVideoAd bar click");
                     }
 
                     @Override
@@ -175,7 +161,7 @@ public class RnRewardVideoReactModule extends ReactContextBaseJavaModule {
 
                     @Override
                     public void onVideoError() {
-                        showToast("rewardVideoAd error");
+//                        showToast("rewardVideoAd error");
                     }
 
                     //视频播放完成后，奖励验证回调，rewardVerify：是否有效，rewardAmount：奖励梳理，rewardName：奖励名称
@@ -187,7 +173,7 @@ public class RnRewardVideoReactModule extends ReactContextBaseJavaModule {
 
                     @Override
                     public void onSkippedVideo() {
-                        showToast("rewardVideoAd has onSkippedVideo");
+//                        showToast("rewardVideoAd has onSkippedVideo");
                     }
                 });
                 mttRewardVideoAd.setDownloadListener(new TTAppDownloadListener() {

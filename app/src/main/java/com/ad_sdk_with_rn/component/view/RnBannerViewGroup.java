@@ -46,7 +46,7 @@ public class RnBannerViewGroup extends ReactViewGroup {
     private View view;
     private Button mCreativeButton;
     private ReactContext context;
-    private FrameLayout frameLayout;
+//    private FrameLayout frameLayout;
     private RnBannerView bannerView;
     private ImageView imgDislike;
     private TextView titleTv;
@@ -70,9 +70,9 @@ public class RnBannerViewGroup extends ReactViewGroup {
 
     @SuppressWarnings({"ALL", "SameParameterValue"})
     private void loadBannerAd(TTAdNative mTTAdNative, String codeId) {
-        frameLayout = new FrameLayout(context);
-        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT);
-        frameLayout.setLayoutParams(params);
+//        frameLayout = new FrameLayout(context);
+//        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+//        frameLayout.setLayoutParams(params);
         bannerView = new RnBannerView(context);
 //        this.bannerView.hide();
         imgDislike = bannerView.getImgDislike();
@@ -106,6 +106,8 @@ public class RnBannerViewGroup extends ReactViewGroup {
         });
         this.addView(bannerView);
         bannerView.layout(-width/2,0,width/2,height);
+        bannerView.requestFocus();
+        requestFocus();
 
     }
 

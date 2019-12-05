@@ -136,7 +136,7 @@ public class RnInterstitialReactModule extends ReactContextBaseJavaModule {
         mTTAdNative.loadNativeAd(adSlot, new TTAdNative.NativeAdListener() {
             @Override
             public void onError(int code, String message) {
-                showToast("load error : " + code + ", " + message);
+//                showToast("load error : " + code + ", " + message);
             }
 
             @Override
