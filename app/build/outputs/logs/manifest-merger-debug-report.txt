@@ -1,18 +1,18 @@
 -- Merging decision tree log ---
 provider#com.bytedance.sdk.openadsdk.multipro.TTMultiProvider
-INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:45:9-48:40
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:46:9-49:40
 	android:authorities
 		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
 provider#com.bytedance.sdk.openadsdk.TTFileProvider
-INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:49:9-57:20
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:50:9-58:20
 	android:authorities
 		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
-INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
-INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
-INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
-MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-61:12
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-61:12
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-61:12
+INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-61:12
+MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-61:12
 MERGED from [com.facebook.react:react-native:0.61.5] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2a80788b0e7a12ab84d453ef92d8ef25/AndroidManifest.xml:2:1-13:12
 MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:2:1-112:12
 MERGED from [:android-gif-drawable-1.2.6:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/5679180ea33e1e37fe3f665236b727f9/AndroidManifest.xml:2:1-11:12
@@ -63,13 +63,13 @@ INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidM
 		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-61:12
 		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-60:12
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:1-61:12
 		INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -138,9 +138,9 @@ ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManif
 	android:name
 		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:24:22-73
 application
-ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:26:5-58:19
-MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:26:5-58:19
-MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:26:5-58:19
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:26:5-59:19
+MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:26:5-59:19
+MERGED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:26:5-59:19
 MERGED from [com.facebook.react:react-native:0.61.5] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2a80788b0e7a12ab84d453ef92d8ef25/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.61.5] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/2a80788b0e7a12ab84d453ef92d8ef25/AndroidManifest.xml:11:5-20
 MERGED from [:open_ad_sdk:] /Users/lcyun/.gradle/caches/transforms-2/files-2.1/8b02a89022c1cacdca3418a83f04f444/AndroidManifest.xml:22:5-110:19
@@ -206,6 +206,12 @@ activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:44:7-84
 	android:name
 		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:44:17-81
+activity#com.ad_sdk_with_rn.ttad.RewardVideoActivity
+ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:45:9-98
+	android:screenOrientation
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:45:60-96
+	android:name
+		ADDED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml:45:19-59
 uses-sdk
 INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/lcyun/Desktop/ad_sdk_with_rn/android/app/src/main/AndroidManifest.xml

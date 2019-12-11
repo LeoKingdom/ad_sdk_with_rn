@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ad_sdk_with_rn.iml" filepath="$PROJECT_DIR$/ad_sdk_with_rn.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-ttad/android/react-native-ttad.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-ttad/android/react-native-ttad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-uapp/android/react-native-uapp.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-uapp/android/react-native-uapp.iml" />
     </modules>
   </component>
 </project>

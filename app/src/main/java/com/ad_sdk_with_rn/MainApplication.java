@@ -3,8 +3,8 @@ package com.ad_sdk_with_rn;
 import android.app.Application;
 import android.content.Context;
 
-import com.ad_sdk_with_rn.component.packages.RnCustomPackage;
-import com.ad_sdk_with_rn.component.manager.TTAdManagerHolder;
+import com.ad_sdk_with_rn.ttad.TTAdManagerHolder;
+import com.ad_sdk_with_rn.ttad.TTadPackage;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
@@ -29,7 +29,7 @@ public class MainApplication extends Application implements ReactApplication {
                     List<ReactPackage> packages = new PackageList(this).getPackages();
                     // Packages that cannot be autolinked yet can be added manually here, for example:
                     // packages.add(new MyReactNativePackage());
-                    packages.add(new RnCustomPackage());
+                    packages.add(new TTadPackage());
                     return packages;
                 }
 

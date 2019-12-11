@@ -142,5 +142,7 @@
     <orderEntry type="library" name="Gradle: :open_ad_sdk:@aar" level="project" />
     <orderEntry type="library" name="Gradle: :android-gif-drawable-1.2.6:@aar" level="project" />
     <orderEntry type="library" name="Gradle: :circleimageview-2.2.0:@aar" level="project" />
+    <orderEntry type="module" module-name="react-native-ttad" />
+    <orderEntry type="module" module-name="react-native-uapp" />
   </component>
 </module>
